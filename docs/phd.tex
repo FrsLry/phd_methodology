@@ -50,7 +50,7 @@
 \IfFileExists{bookmark.sty}{\usepackage{bookmark}}{\usepackage{hyperref}}
 \hypersetup{
   pdftitle={PhD Methodology},
-  pdfauthor={François Leroy},
+  pdfauthor={François Leroy  Czech University of Life Sciences},
   hidelinks,
   pdfcreator={LaTeX via pandoc}}
 \urlstyle{same} % disable monospaced font for URLs
@@ -121,10 +121,11 @@
 \addbibresource{references.bib}
 
 \title{PhD Methodology}
-\author{François Leroy}
+\author{François Leroy Czech University of Life Sciences}
 \date{2021-04-03}
 
-
+% to include pdf
+\usepackage{pdfpages}
 
 
 
@@ -132,6 +133,7 @@
 % Start of the documents
 \begin{document}
 \maketitle
+
 
 % Roman numbering for content before toc and toc itself
 \cleardoublepage 
@@ -163,9 +165,9 @@ Human life quality is intrinsically linked to ecosystems state that he is living
 % First step: I define the name and label of the biblio part
 \chapter{References}\label{references}
 {
-% I temporarily redefine the clearpage in oder for the bib to not be printed on a new page
+% I temporarily redefine the clearpage in order for the bib to not be printed on a new page
 \renewcommand{\clearpage}{}
-\printbibliography[heading=none] %this line is used to print the bib
+\printbibliography[heading=none] % I delete the default name of the bib
 %\printbibliography 
 }
 

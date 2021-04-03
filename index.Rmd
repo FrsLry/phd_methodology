@@ -1,5 +1,6 @@
 --- 
-title: "PhD Methodology"
+title: "PhD Methodology" # if you indicate the tile, it'll create a new cover page
+# coverpage: true # will take the _assets/coverpage.pdf file as cover page
 author: "François Leroy"
 date: "`r Sys.Date()`"
 
