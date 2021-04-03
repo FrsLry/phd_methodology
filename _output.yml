@@ -29,7 +29,7 @@
 ## Here to create the pdf
 bookdown::pdf_book:
   toc: true
-  toc_bib: true
+  #toc_bib: true
   template: _assets/template.tex
   mainmatter: true
   includes:
@@ -37,7 +37,7 @@ bookdown::pdf_book:
   latex_engine: lualatex
   citation_package: biblatex
   keep_tex: yes
-  split_bib: yes
+  #split_bib: false
   #biblio-style: # whatever
   
 

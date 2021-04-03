@@ -29,7 +29,7 @@ site: bookdown::bookdown_site
 bibliography:
  - references.bib
 biblio-style: apa
-biblio-title: References
+# biblio-title:  ## note: the name and label of the bib part is in the template!!!
 
 link-citations: yes
 github-repo: FrsLry/phd
@@ -46,11 +46,4 @@ knitr::opts_chunk$set(warning = F,
 # Annotation
 
 
-Human life quality is intrinsically linked to ecosystems state that he is living in. Indeed, ecosystems services extend in a large spectrum of mechanisms including nutrient cycle, food production or climate and water cycle regulation [@pereira_global_2012]. Those essential services are directly relying on biodiversity. Unfortunately, anthropogenic stressors such as habitat loss, over exploitation, pollution or introduction of invasive species could lead biodiversity to its 6$^{th}$ mass extinction [@barnosky_has_2011]. While the loss of global biodiversity is unprecedented, current scientific literature has also shown that temporal trends in local changes of biodiversity can be opposite to trends at larger scales [@chase_species_2019]. Thus, current changes in biodiversity is far more complex than a simple decrease: most of the ecosystems undergo alterations of their communities with changes in species composition [@blowes_geography_2019; @dornelas_assemblage_2014]. In addition to considering those changes as a function of the taxa, those shifts of biodiversity must also be considered according to the spatial scale it is defined by. Even if few studies have shown a link between spatial scale and diversity [@Keil_biogeo_2012], it is still not clear how the biodiversity changes are linked to temporal or spatial scales.
-
-Therefore, my PhD will focus on $1)$ assessing how biodiversity changes are linked to scale and $2)$ determine which abiotic and biotic parameters are influencing these changes across different scales.
-
-Thus, part of my PhD will consist in developing methods that allows to model biodiversity using machine learning (*e.g.* tree-based modeling methods) and statistical (frequentist and bayesian) modeling methods. This methods aims to be developed on a specific taxa and could ideally be extrapolated to others. The data used will need to be at different spatial scales and contain time-series. Dr. Petr Keil and I are already in contact with Profs. Vladimír Bejček and Karel Šťastný (CZU) and Doc. Jiří Reif (Charles University) who could grant us access to a high quality database on bird presence all across Czech Republic. On the other hand, discussion is still ongoing with Dr. Tomáš Kadlec and Michal Knapp (CZU) in order to have access on lepidoptaria distributions in different regions of Czechia. A third source of data will consist in developing our own database using reserve checklist, atlases, local surveys or red lists.           
-
-
-
+Human life quality is intrinsically linked to ecosystems state that he is living in. Indeed, ecosystems services extend in a large spectrum of mechanisms including nutrient cycle, food production or climate and water cycle regulation [@pereira_global_2012].
