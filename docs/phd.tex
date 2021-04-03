@@ -1,0 +1,165 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% Specify the command that you want into the header of the
+% index.md file
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% Options for packages loaded elsewhere
+\PassOptionsToPackage{unicode}{hyperref}
+\PassOptionsToPackage{hyphens}{url}
+%
+\documentclass[
+  12pt,
+  oneside]{report}
+%%\usepackage{lmodern}
+%
+% Set line spacing
+\usepackage{setspace}
+\setstretch{1.5}
+
+\usepackage{amssymb,amsmath}
+\usepackage{ifxetex,ifluatex}
+\ifnum 0\ifxetex 1\fi\ifluatex 1\fi=0 % if pdftex
+  \usepackage[T1]{fontenc}
+  \usepackage[utf8]{inputenc}
+  \usepackage{textcomp} % provide euro and other symbols
+\else % if luatex or xetex
+  \usepackage{unicode-math}
+  \defaultfontfeatures{Scale=MatchLowercase}
+  \defaultfontfeatures[\rmfamily]{Ligatures=TeX,Scale=1}
+\fi
+% Use upquote if available, for straight quotes in verbatim environments
+\IfFileExists{upquote.sty}{\usepackage{upquote}}{}
+\IfFileExists{microtype.sty}{% use microtype if available
+  \usepackage[]{microtype}
+  \UseMicrotypeSet[protrusion]{basicmath} % disable protrusion for tt fonts
+}{}
+\makeatletter
+\@ifundefined{KOMAClassName}{% if non-KOMA class
+  \IfFileExists{parskip.sty}{%
+    \usepackage{parskip}
+  }{% else
+    \setlength{\parindent}{0pt}
+    \setlength{\parskip}{6pt plus 2pt minus 1pt}}
+}{% if KOMA class
+  \KOMAoptions{parskip=half}}
+\makeatother
+\usepackage{xcolor}
+\IfFileExists{xurl.sty}{\usepackage{xurl}}{} % add URL line breaks if available
+\IfFileExists{bookmark.sty}{\usepackage{bookmark}}{\usepackage{hyperref}}
+\hypersetup{
+  pdftitle={PhD Methodology},
+  pdfauthor={François Leroy},
+  hidelinks,
+  pdfcreator={LaTeX via pandoc}}
+\urlstyle{same} % disable monospaced font for URLs
+
+%% Package geometry
+\usepackage[left = 2cm,right = 2cm,top = 2cm,bottom = 2cm]{geometry}
+\usepackage{pdflscape}
+
+
+\usepackage{longtable,booktabs}
+% Correct order of tables after \paragraph or \subparagraph
+\usepackage{etoolbox}
+\makeatletter
+\patchcmd\longtable{\par}{\if@noskipsec\mbox{}\fi\par}{}{}
+\makeatother
+% Allow footnotes in longtable head/foot
+\IfFileExists{footnotehyper.sty}{\usepackage{footnotehyper}}{\usepackage{footnote}}
+\makesavenoteenv{longtable}
+\setlength{\emergencystretch}{3em} % prevent overfull lines
+\providecommand{\tightlist}{%
+  \setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}}
+\setcounter{secnumdepth}{5}
+%%% Complete the preamble of the LaTeX template
+%%%------------------------------------------------------------------------------
+
+%% Bug de bookdown: ne traite plus la déclaration "otherlangs" dans le préambule
+% Pour charger les langues, écriture ici en dur du produit de bookdown
+% Corrigé le 22/11/2019. A retester régulièrement: supprimer ces lignes si la compilation fonctionne sans elles.
+\usepackage{polyglossia}
+  \setmainlanguage[variant=american]{english}
+  \setotherlanguage[]{french}
+% Bug persistant le 28/02/2020
+
+% Advised with polyglossia and babel
+\usepackage{csquotes}
+
+% Environnement "Essentiel" en début de chapitre
+\usepackage[tikz]{bclogo}
+\newenvironment{Essentiel}
+  {\begin{bclogo}[logo=\bctrombone, noborder=true, couleur=lightgray!50]{L'essentiel}\parindent0pt}
+  {\end{bclogo}}
+
+%% Package fontspec
+\usepackage{fontspec}
+\setmainfont{calibri}[
+  Path           = ./fonts/,
+  Extension      = .ttf,
+  BoldFont       = calibrib,
+  ItalicFont     = calibrili,
+  BoldItalicFont = calibriz]
+
+% Rename chapters
+% Below, scrpit to prevent the "chapter n" and the space use for it to
+% be displayed
+\usepackage{titlesec}
+\titleformat{\chapter}   
+{\Huge}{\thechapter{. }}{0pt}{\Huge}
+%{\thechapter{. }}
+\titlespacing*{\chapter}{0pt}{-50pt}{10pt}
+ % -50 is to up the title and 10 is the space with the text below
+\ifluatex
+  \usepackage{selnolig}  % disable illegal ligatures
+\fi
+\usepackage[style=apa,]{biblatex}
+\addbibresource{references.bib}
+
+\title{PhD Methodology}
+\author{François Leroy}
+\date{2021-04-03}
+
+
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Start of the documents
+\begin{document}
+\maketitle
+
+% Roman numbering for content before toc and toc itself
+\cleardoublepage 
+\pagenumbering{roman}
+
+{
+\setcounter{tocdepth}{1}
+\tableofcontents
+}
+\listoffigures
+\listoftables
+\setstretch{1.5}
+
+
+% Start the arabic numbering at the 1st chapter
+\cleardoublepage 
+\pagenumbering{arabic}
+
+
+% The mind, the...
+\hypertarget{study-plan}{%
+\chapter{Study Plan}\label{study-plan}}
+
+Human life quality is intrinsically linked to ecosystems state that he is living in. Indeed, ecosystems services extend in a large spectrum of mechanisms including nutrient cycle, food production or climate and water cycle regulation \autocite{pereira_global_2012}. Those essential services are directly relying on biodiversity. Unfortunately, anthropogenic stressors such as habitat loss, over exploitation, pollution or introduction of invasive species could lead biodiversity to its 6\(^{th}\) mass extinction \autocite{barnosky_has_2011}. While the loss of global biodiversity is unprecedented, current scientific literature has also shown that temporal trends in local changes of biodiversity can be opposite to trends at larger scales \autocite{chase_species_2019}. Thus, current changes in biodiversity is far more complex than a simple decrease: most of the ecosystems undergo alterations of their communities with changes in species composition \autocite{blowes_geography_2019,dornelas_assemblage_2014}. In addition to considering those changes as a function of the taxa, those shifts of biodiversity must also be considered according to the spatial scale it is defined by. Even if few studies have shown a link between spatial scale and diversity \autocite{Keil_biogeo_2012}, it is still not clear how the biodiversity changes are linked to temporal or spatial scales.
+
+Therefore, my PhD will focus on \(1)\) assessing how biodiversity changes are linked to scale and \(2)\) determine which abiotic and biotic parameters are influencing these changes across different scales.
+
+Thus, part of my PhD will consist in developing methods that allows to model biodiversity using machine learning (\emph{e.g.} tree-based modeling methods) and statistical (frequentist and bayesian) modeling methods. This methods aims to be developed on a specific taxa and could ideally be extrapolated to others. The data used will need to be at different spatial scales and contain time-series. Dr.~Petr Keil and I are already in contact with Profs. Vladimír Bejček and Karel Šťastný (CZU) and Doc. Jiří Reif (Charles University) who could grant us access to a high quality database on bird presence all across Czech Republic. On the other hand, discussion is still ongoing with Dr.~Tomáš Kadlec and Michal Knapp (CZU) in order to have access on lepidoptaria distributions in different regions of Czechia. A third source of data will consist in developing our own database using reserve checklist, atlases, local surveys or red lists.
+
+
+\singlespacing % reset the spacing of the bibliography style
+\printbibliography
+
+\end{document}

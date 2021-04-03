@@ -1,0 +1,64 @@
+## Gitbook is to create the website
+#bookdown::gitbook:
+#  number_sections: true # true if you want
+#  #split_by: none # to withdraw if you want a page by chapter
+#  includes:
+#      #before_body: _assets/template.html
+#      in_header : _assets/hypothesis.html
+#  css: _assets/css/style.css #style.css, bootstrap.css
+#  config:
+#    toc:
+#      before: |
+#        <li><a href="./">A Thesis draft</a></li>
+#        <a href="https://github.com/FrsLry/phd/raw/master/phd.docx" title="test" target="_blank"><img src="https://img.shields.io/badge/download-docx-blue.svg" /></a>
+#        <a href="https://github.com/FrsLry/phd/raw/master/docs/phd.pdf" title="test" target="_blank"><img src="https://img.shields.io/badge/download-pdf-red.svg" /></a>
+#      after: |
+#        <li><a href="./">François Leroy</a></li>
+#        <li><a href="./">PhD student in Macroecology at CZU</a></li>
+#    edit: https://github.com/rstudio/phd/edit/master/%s
+#    download: false # ["pdf", "docx"]
+#    sharing:
+#      facebook: no
+#      github: yes
+#      twitter: no
+#      all: none
+#  fig_caption: true
+#  split_bib: false # if you want to have all the biblio in the end and not at each end page
+
+
+## Here to create the pdf
+bookdown::pdf_book:
+  toc: true
+  template: _assets/template.tex
+  mainmatter: true
+  includes:
+    in_header: _assets/preamble.tex
+  latex_engine: lualatex
+  citation_package: biblatex
+  keep_tex: yes
+  split_bib: yes
+  #biblio-style: # whatever
+  
+
+#bookdown::epub_book: default
+
+
+# Here to create the docx, that appears in root/
+rmarkdown::word_document:
+    toc: true
+    reference_docx: _assets/template.docx
+    number_sections: true
+
+
+
+  
+#To play with a simple html page 
+#bookdown::html_document2:
+#  number_sections: true # true if you want
+#  toc: true
+#  toc_float: true
+#  css: _assets/css/basic.css # style.css
+#  include:
+#    in_header: _assets/simple.html
+#  code_folding: hide
+#  #theme: sandstone
