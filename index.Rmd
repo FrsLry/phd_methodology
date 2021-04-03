@@ -29,6 +29,7 @@ site: bookdown::bookdown_site
 bibliography:
  - references.bib
 biblio-style: apa
+biblio-title: References
 
 link-citations: yes
 github-repo: FrsLry/phd

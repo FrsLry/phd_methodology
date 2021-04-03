@@ -29,6 +29,7 @@
 ## Here to create the pdf
 bookdown::pdf_book:
   toc: true
+  toc_bib: true
   template: _assets/template.tex
   mainmatter: true
   includes:

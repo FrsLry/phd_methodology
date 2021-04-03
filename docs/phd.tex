@@ -110,7 +110,11 @@
 {\Huge}{\thechapter{. }}{0pt}{\Huge}
 %{\thechapter{. }}
 \titlespacing*{\chapter}{0pt}{-50pt}{10pt}
- % -50 is to up the title and 10 is the space with the text below
+% -50 is to up the title and 10 is the space with the text below
+
+\usepackage{makeidx}
+\makeindex
+\usepackage[totoc]{idxlayout}
 \ifluatex
   \usepackage{selnolig}  % disable illegal ligatures
 \fi
@@ -149,8 +153,8 @@
 
 
 % The mind, the...
-\hypertarget{study-plan}{%
-\chapter{Study Plan}\label{study-plan}}
+\hypertarget{annotation}{%
+\chapter{Annotation}\label{annotation}}
 
 Human life quality is intrinsically linked to ecosystems state that he is living in. Indeed, ecosystems services extend in a large spectrum of mechanisms including nutrient cycle, food production or climate and water cycle regulation \autocite{pereira_global_2012}. Those essential services are directly relying on biodiversity. Unfortunately, anthropogenic stressors such as habitat loss, over exploitation, pollution or introduction of invasive species could lead biodiversity to its 6\(^{th}\) mass extinction \autocite{barnosky_has_2011}. While the loss of global biodiversity is unprecedented, current scientific literature has also shown that temporal trends in local changes of biodiversity can be opposite to trends at larger scales \autocite{chase_species_2019}. Thus, current changes in biodiversity is far more complex than a simple decrease: most of the ecosystems undergo alterations of their communities with changes in species composition \autocite{blowes_geography_2019,dornelas_assemblage_2014}. In addition to considering those changes as a function of the taxa, those shifts of biodiversity must also be considered according to the spatial scale it is defined by. Even if few studies have shown a link between spatial scale and diversity \autocite{Keil_biogeo_2012}, it is still not clear how the biodiversity changes are linked to temporal or spatial scales.
 
@@ -160,6 +164,6 @@ Thus, part of my PhD will consist in developing methods that allows to model bio
 
 
 \singlespacing % reset the spacing of the bibliography style
-\printbibliography
+\printbibliography[title=References]
 
 \end{document}
