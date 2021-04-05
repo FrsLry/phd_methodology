@@ -1,0 +1,6 @@
+# Introduction {#intro}
+
+
+Human life quality is intrinsically linked to ecosystems state that he is living in. Indeed, ecosystems
+services extend in a large spectrum of mechanisms including nutrient cycle, food production, or
+climate and water cycle regulation [@pereira_global_2012].

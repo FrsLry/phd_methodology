@@ -8,6 +8,7 @@
 % Options for packages loaded elsewhere
 \PassOptionsToPackage{unicode}{hyperref}
 \PassOptionsToPackage{hyphens}{url}
+\PassOptionsToPackage{dvipsnames,svgnames*,x11names*}{xcolor}
 %
 \documentclass[
   12pt,
@@ -51,7 +52,11 @@
 \hypersetup{
   pdftitle={PhD Methodology},
   pdfauthor={François Leroy},
-  hidelinks,
+  colorlinks=true,
+  linkcolor=Maroon,
+  filecolor=Maroon,
+  citecolor=Blue,
+  urlcolor=Blue,
   pdfcreator={LaTeX via pandoc}}
 \urlstyle{same} % disable monospaced font for URLs
 
@@ -111,9 +116,6 @@
 %{\thechapter{. }}
 \titlespacing*{\chapter}{0pt}{-50pt}{10pt}
 % -50 is to up the title and 10 is the space with the text below
-
-
-
 \ifluatex
   \usepackage{selnolig}  % disable illegal ligatures
 \fi
@@ -140,6 +142,7 @@
 \pagenumbering{roman}
 
 {
+\hypersetup{linkcolor=}
 \setcounter{tocdepth}{1}
 \tableofcontents
 }
@@ -155,9 +158,44 @@
 
 % The mind, the...
 \hypertarget{annotation}{%
-\chapter{Annotation}\label{annotation}}
+\chapter*{Annotation}\label{annotation}}
+\addcontentsline{toc}{chapter}{Annotation}
 
-Human life quality is intrinsically linked to ecosystems state that he is living in. Indeed, ecosystems services extend in a large spectrum of mechanisms including nutrient cycle, food production or climate and water cycle regulation \autocite{pereira_global_2012}.
+Biodiversity, at the basis of many essentials ecosystem services, is in the process of facing its sixth mass extinction. Although global extinction is unprecedented, there is so far no reason to expect that biodiversity dynamic at lower spatial and temporal scales follow this trend. Thus, links between
+spatio-temporal scales and facets of biodiversity (i.e.~species richness, colonization, extinction or
+species turnover) need to be fully understood if we want to address this worldwide crisis. So far,
+attempts to describe biodiversity changes have been limited mainly by heterogeneity in spatial and
+temporal scales that was hardly taken into account by the statistical modelling frameworks.
+
+My PhD project propose to address this flaws in order to understand in more details biodiversity
+changes across spatial and temporal scales. Especially, we aim at developing and testing nonparametric
+tree-based modelling methods allowing to study the non-linear and interacting effects of
+space and time-span on different aspects of biodiversity.
+
+\underline{The specific objectives of my PhD project are:}
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\tightlist
+\item
+  Modelling and mapping avian species richness changes over Czech Republic across space and time
+  scales.
+\item
+  Decompose the modelled biodiversity to colonization, extinction, species turnover, across spatiotemporal
+  scales.
+\item
+  Estimate the strength of the link between environmental drivers of biodiversity change across
+  spatio-temporal scales.
+\item
+  Apply the previously developed method to other European regions (e.g.~UK, Switzerland, France)
+\end{enumerate}
+
+\hypertarget{intro}{%
+\chapter{Introduction}\label{intro}}
+
+Human life quality is intrinsically linked to ecosystems state that he is living in. Indeed, ecosystems
+services extend in a large spectrum of mechanisms including nutrient cycle, food production, or
+climate and water cycle regulation \autocite{pereira_global_2012}.
 
 
 \singlespacing % reset the spacing of the bibliography style
