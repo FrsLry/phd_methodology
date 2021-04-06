@@ -127,7 +127,7 @@
 
 \title{PhD Methodology}
 \author{François Leroy}
-\date{2021-04-05}
+\date{2021-04-06}
 
 % to include pdf
 \usepackage{pdfpages}
@@ -166,7 +166,7 @@
 
 Biodiversity, at the basis of many essentials ecosystem services, is in the process of facing its sixth mass extinction. Although global extinction is unprecedented, there is so far no reason to expect that biodiversity dynamic at lower spatial and temporal scales follow this trend. Thus, links between
 spatio-temporal scales and facets of biodiversity (\emph{i.e.} species richness, species diversity, colonization, extinction,
-species turnover etc) need to be fully understood if we want to address this worldwide crisis. So far,
+species turnover, etc) need to be fully understood if we want to address this worldwide crisis. So far,
 attempts to describe biodiversity changes have been limited mainly by heterogeneity in spatial and
 temporal scales that was hardly taken into account by the statistical modelling frameworks.
 
@@ -196,9 +196,38 @@ space and time-span on different aspects of biodiversity.
 \hypertarget{intro}{%
 \chapter{Introduction}\label{intro}}
 
-Human life quality is intrinsically linked to ecosystems state that he is living in. Indeed, ecosystems
-services extend in a large spectrum of mechanisms including nutrient cycle, food production, or
-climate and water cycle regulation \autocite{pereira_global_2012}.
+Human life quality is intrinsically linked to ecosystems state that he is living in. Indeed, ecosystems services extend in a large spectrum of mechanisms including nutrient cycle, food production, or climate and water cycle regulation \autocite{pereira_global_2012}. Some of those ecosystem
+functions are managed by bird populations such as seed dispersal, controls pests or pollinate plant.
+Unfortunately, anthropogenic stressors like habitat loss, over exploitation, pollution or introduction of
+invasive species could lead biodiversity to its sixth mass extinction \autocite{barnosky_has_2011}.
+
+While the loss of global biodiversity is unprecedented, current scientific literature has also shown that
+temporal trends in local changes of biodiversity can be opposite to trends at larger scales \autocite{chase_species_2019}. Thus, current changes in biodiversity is far more complex than a simple global decrease:
+most of the ecosystems undergo alterations of their communities with changes in species composition \autocite{blowes_geography_2019,dornelas_assemblage_2014}.
+
+Typically, biodiversity is considered for a particular taxon (\emph{e.g.} birds, amphibians, reptiles\ldots), but also
+according to the spatial scale it is defined by. Here, the term scale refers to the area in which the
+biodiversity in considered, also referred hereafter as grain size. So far, it has been assumed that
+holding the spatial scale constant when studying biodiversity is mandatory \autocite{whittaker_scale_2001}. As
+a matter of fact, it is known that species richness increases with the area considered \autocite{arrhenius_species_1921}.
+
+and this relationship is approximately linear on a log-log scale (Species-Area Relationship,
+SAR). However, this assumption restricts the data accessibility as sampling plans widely differ
+according to the species studied, the resources available or, the field conditions. Thus, developing a
+method capable of dealing with biodiversity across varying grain size could increase significantly the
+data availability. Moreover, it would allow to model biodiversity at different spatial scales than the
+ones used in the data. Modelling biodiversity indexes at finer spatial grain size that the data used to
+learn the model is referred as \emph{downscaling} biodiversity whilst extrapolating at coarser grain-size is
+called \emph{upscaling}.
+
+So far, there are indications that such method can be used. For instance, \textcite{keil_downscaling_2014} and \textcite{keil_downscaling_2013} showed promising downscaling biodiversity models using biodiversity data with different
+spatial scales, whilst \textcite{kunin_upscaling_2018} showed that upscaling biodiversity is also possible. Thus, all
+the constituents of cross-scales models are known but still need to be gathered and tested. For
+instance, \textcite{jarzyna_spatial_2015} used a Bayesian framework to study temporal changes of avian
+biodiversity (colonization, extinction, temporal turnover) across scales. However, other approaches
+such as parametric Generalized Linear Models (GLM), Generalized Additive Models (GAM) and
+Generalized Linear Mixed Model (GLMM) or non-parametric tree based machine learning methods
+need to be tested.
 
 
 \singlespacing % reset the spacing of the bibliography style
