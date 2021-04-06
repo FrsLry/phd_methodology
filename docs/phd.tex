@@ -193,6 +193,19 @@ space and time-span on different aspects of biodiversity.
   Apply the previously developed method to other European regions (e.g.~UK, Switzerland, France)
 \end{enumerate}
 
+\clearpage
+
+\textbf{PhD candidate:} François Leroy\newline
+\textbf{Programme:} Environmental Earth Sciences\newline
+\textbf{Department:} \href{https://www.fzp.czu.cz/en/r-9407-departments/r-9471-departments/r-9649-department-of-spatial-sciences}{Applied Geoinformatic and Spatial Planning}\newline
+\textbf{Advisor:} \href{http://wp.czu.cz/cs/index.php/?r=1071\&mp=person.info\&idClovek=2155}{doc. Ing. Petra Šímová, Ph.D.}\newline
+\textbf{Consultant:} Mgr. \href{http://wp.czu.cz/cs/index.php/?r=1071\&mp=person.info\&idClovek=34772}{Petr Keil}, PhD\newline
+\textbf{Beginning of study:} October 2020\newline
+\newline
+
+\begingroup
+\let\clearpage\relax
+
 \hypertarget{intro}{%
 \chapter{Introduction}\label{intro}}
 
@@ -209,9 +222,7 @@ Typically, biodiversity is considered for a particular taxon (\emph{e.g.} birds,
 according to the spatial scale it is defined by. Here, the term scale refers to the area in which the
 biodiversity in considered, also referred hereafter as grain size. So far, it has been assumed that
 holding the spatial scale constant when studying biodiversity is mandatory \autocite{whittaker_scale_2001}. As
-a matter of fact, it is known that species richness increases with the area considered \autocite{arrhenius_species_1921}.
-
-and this relationship is approximately linear on a log-log scale (Species-Area Relationship,
+a matter of fact, it is known that species richness increases with the area considered \autocite{arrhenius_species_1921} and this relationship is approximately linear on a log-log scale (Species-Area Relationship,
 SAR). However, this assumption restricts the data accessibility as sampling plans widely differ
 according to the species studied, the resources available or, the field conditions. Thus, developing a
 method capable of dealing with biodiversity across varying grain size could increase significantly the
@@ -228,6 +239,62 @@ biodiversity (colonization, extinction, temporal turnover) across scales. Howeve
 such as parametric Generalized Linear Models (GLM), Generalized Additive Models (GAM) and
 Generalized Linear Mixed Model (GLMM) or non-parametric tree based machine learning methods
 need to be tested.
+
+\endgroup
+
+\hypertarget{aims}{%
+\chapter{Aims}\label{aims}}
+
+The main aim of my PhD will be to test different statistical modeling methods allowing to integrate
+cross-scales biodiversity data. This method will allow to model biodiversity facets at various spatial
+and temporal grain sizes.
+
+This principal objective can be divided into four sub-objectives:
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\item
+  \textbf{I will model temporal dynamics of avian species richness in the Czech Republic across spatio-temporal scales} (\emph{i.e.} grain size ranging from less than 1 Km² to more than 2 000
+  Km²). This will allow to map biodiversity over Czech republic at any desired spatial and
+  temporal scales. Given the well known Species-Area Relationship \autocites[SAR,][]{arrhenius_species_1921,storch_untangling_2004} and Species-Time Relationship \autocite[STR,][]{white_comparison_2006} we expect to
+  see higher species richness at coarser spatial and temporal scales than at finer scales.
+  Moreover, we will be able to look at the effect of grain size over biodiversity trends. So far,
+  \textcite{chase_species_2019} showed that North American avian biodiversity is largely stable at fine
+  scales, but that it tends to increase with spatial scale. Thus, we can expect to observe the same
+  trends for the Czech Republic.
+\item
+  \textbf{I will decompose the modelled biodiversity to colonization, extinction, and species turnover, across spatio-temporal scales.} Indeed, biodiversity dynamic is underlined by
+  those ecological processes whose trends can be opposite to the species richness' one \autocite{dornelas_assemblage_2014}. Thus, understanding how they fluctuate according to the spatio-temporal scales
+  they are considered will help understand the global biodiversity dynamic. So far, \textcite{jarzyna_spatial_2015} showed that those facets of biodiversity was in general declining with increasing
+  spatial grain size for the state of New-York. However the colonization undergoes a slower
+  steep. Thus, those trends are also expected to occur with our model for the Czech Republic.
+\item
+  \textbf{I will estimate the strength of the link between environmental drivers of biodiversity change across spatio-temporal scales.} So far, land use change, habitat loss, or changes in
+  climatic conditions are good candidates for such drivers. \textcite{jarzyna_spatial_2015} showed that
+  environmental parameters, such as climate change variables (\emph{e.g.} temperatures, pluviometry)
+  and landscape variables (\emph{e.g.} elevation, sampling effort), were dependent on the spatial scale
+  on the one hand, but also on the metric considered on the other hand (\emph{i.e.} colonization,
+  extinction\ldots). Thus, the expectations are more difficult to assess here. What we know is that at
+  larger scales (\emph{i.e.} biogeographic or continental), evolutionary processes tend to drive the
+  biodiversity patterns \autocite{keil_downscaling_2014}. Climatic and land cover parameters, for their part,
+  intervene at scales ranging from tens to hundreds of kilometers. At even finer scales, biotic
+  and population dynamics processes are driving.
+\item
+  \textbf{Once the methods will be validated for the Czech Republic, the logical continuation will be to use it over other European regions (\textit{i.e.} Switzerland, United-Kingdom, Brittany).} The main advantage of looking at other countries is to look at the trend of
+  biodiversity facets at larger scales. As for objective 1, we can also expect that the species
+  richness trends will tend to increase with spatial scale \autocite{chase_species_2019} whilst, as for
+  objective 2, other biodiversity dynamic indexes will decrease \autocite{jarzyna_spatial_2015}.
+\end{enumerate}
+
+\hypertarget{method}{%
+\chapter{Methodological approach}\label{method}}
+
+\hypertarget{data}{%
+\section{Data}\label{data}}
+
+A significant part of this project will consist in \textbf{1)} harvesting, gathering and managing biodiversity
+datasets of the aimed taxon (i.e.~birds here) in order to \textbf{2)} use them to model biodiversity facets
+across spatial and temporal scales.
 
 
 \singlespacing % reset the spacing of the bibliography style

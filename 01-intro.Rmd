@@ -1,3 +1,18 @@
+<!-- to start this on a new page -->
+\clearpage
+
+**PhD candidate:** François Leroy\newline
+**Programme:** Environmental Earth Sciences\newline
+**Department:** [Applied Geoinformatic and Spatial Planning](https://www.fzp.czu.cz/en/r-9407-departments/r-9471-departments/r-9649-department-of-spatial-sciences)\newline
+**Advisor:** [doc. Ing. Petra Šímová, Ph.D.](http://wp.czu.cz/cs/index.php/?r=1071&mp=person.info&idClovek=2155)\newline
+**Consultant:** Mgr. [Petr Keil](http://wp.czu.cz/cs/index.php/?r=1071&mp=person.info&idClovek=34772), PhD\newline
+**Beginning of study:** October 2020\newline
+\newline
+
+<!-- The new group is the only the introduction for it to start just after my specififcations-->
+\begingroup
+\let\clearpage\relax
+
 # Introduction {#intro}
 
 
@@ -16,9 +31,7 @@ Typically, biodiversity is considered for a particular taxon (*e.g.* birds, amph
 according to the spatial scale it is defined by. Here, the term scale refers to the area in which the
 biodiversity in considered, also referred hereafter as grain size. So far, it has been assumed that
 holding the spatial scale constant when studying biodiversity is mandatory [@whittaker_scale_2001]. As
-a matter of fact, it is known that species richness increases with the area considered [@arrhenius_species_1921]. 
-
-and this relationship is approximately linear on a log-log scale (Species-Area Relationship,
+a matter of fact, it is known that species richness increases with the area considered [@arrhenius_species_1921] and this relationship is approximately linear on a log-log scale (Species-Area Relationship,
 SAR). However, this assumption restricts the data accessibility as sampling plans widely differ
 according to the species studied, the resources available or, the field conditions. Thus, developing a
 method capable of dealing with biodiversity across varying grain size could increase significantly the
@@ -35,3 +48,5 @@ biodiversity (colonization, extinction, temporal turnover) across scales. Howeve
 such as parametric Generalized Linear Models (GLM), Generalized Additive Models (GAM) and
 Generalized Linear Mixed Model (GLMM) or non-parametric tree based machine learning methods
 need to be tested.
+
+\endgroup

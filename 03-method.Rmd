@@ -1,0 +1,8 @@
+
+# Methodological approach {#method}
+
+## Data
+
+A significant part of this project will consist in **1)** harvesting, gathering and managing biodiversity
+datasets of the aimed taxon (i.e. birds here) in order to **2)** use them to model biodiversity facets
+across spatial and temporal scales.

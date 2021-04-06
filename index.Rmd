@@ -4,12 +4,13 @@ title: "PhD Methodology" # if you indicate the tile, it'll create a new cover pa
 author: "François Leroy"
 date: "`r Sys.Date()`"
 
-## This line is to use when you want several outputs (specified inoutput.yml)
+## This line is to use when you want several outputs (specified in output.yml)
 site: bookdown::bookdown_site
 
 ## The default class 
 documentclass: report
 classoption: oneside # really important!!!!
+
 
 # Set font features
 fontsize: 12pt

@@ -1,0 +1,39 @@
+
+# Aims {#aims}
+
+The main aim of my PhD will be to test different statistical modeling methods allowing to integrate
+cross-scales biodiversity data. This method will allow to model biodiversity facets at various spatial
+and temporal grain sizes.
+
+This principal objective can be divided into four sub-objectives:
+
+1. **I will model temporal dynamics of avian species richness in the Czech Republic across spatio-temporal scales** (*i.e.* grain size ranging from less than 1 Km² to more than 2 000
+Km²). This will allow to map biodiversity over Czech republic at any desired spatial and
+temporal scales. Given the well known Species-Area Relationship [SAR, @arrhenius_species_1921; @storch_untangling_2004] and Species-Time Relationship [STR, @white_comparison_2006] we expect to
+see higher species richness at coarser spatial and temporal scales than at finer scales.
+Moreover, we will be able to look at the effect of grain size over biodiversity trends. So far,
+@chase_species_2019 showed that North American avian biodiversity is largely stable at fine
+scales, but that it tends to increase with spatial scale. Thus, we can expect to observe the same
+trends for the Czech Republic.
+
+2. **I will decompose the modelled biodiversity to colonization, extinction, and species turnover, across spatio-temporal scales.** Indeed, biodiversity dynamic is underlined by
+those ecological processes whose trends can be opposite to the species richness' one [@dornelas_assemblage_2014]. Thus, understanding how they fluctuate according to the spatio-temporal scales
+they are considered will help understand the global biodiversity dynamic. So far, @jarzyna_spatial_2015 showed that those facets of biodiversity was in general declining with increasing
+spatial grain size for the state of New-York. However the colonization undergoes a slower
+steep. Thus, those trends are also expected to occur with our model for the Czech Republic.
+
+3. **I will estimate the strength of the link between environmental drivers of biodiversity change across spatio-temporal scales.** So far, land use change, habitat loss, or changes in
+climatic conditions are good candidates for such drivers. @jarzyna_spatial_2015 showed that
+environmental parameters, such as climate change variables (*e.g.* temperatures, pluviometry)
+and landscape variables (*e.g.* elevation, sampling effort), were dependent on the spatial scale
+on the one hand, but also on the metric considered on the other hand (*i.e.* colonization,
+extinction...). Thus, the expectations are more difficult to assess here. What we know is that at
+larger scales (*i.e.* biogeographic or continental), evolutionary processes tend to drive the
+biodiversity patterns [@keil_downscaling_2014]. Climatic and land cover parameters, for their part,
+intervene at scales ranging from tens to hundreds of kilometers. At even finer scales, biotic
+and population dynamics processes are driving.
+
+4. **Once the methods will be validated for the Czech Republic, the logical continuation will be to use it over other European regions (\textit{i.e.} Switzerland, United-Kingdom, Brittany).** The main advantage of looking at other countries is to look at the trend of
+biodiversity facets at larger scales. As for objective 1, we can also expect that the species
+richness trends will tend to increase with spatial scale [@chase_species_2019] whilst, as for
+objective 2, other biodiversity dynamic indexes will decrease [@jarzyna_spatial_2015].
