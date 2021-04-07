@@ -472,14 +472,23 @@ $if(colorlinks)$
 $endif$
 \setcounter{tocdepth}{$toc-depth$}
 \tableofcontents
+\newpage
 }
 $endif$
 $endif$
 $if(lof)$
+\vspace{10mm}
+\begin{minipage}[]{1\linewidth}
 \listoffigures
+\end{minipage}
 $endif$
+\vspace{50mm}
 $if(lot)$
+\begin{minipage}[]{1\linewidth}
+\hypersetup{linkcolor = black}
 \listoftables
+\thispagestyle{empty}
+\end{minipage}
 $endif$
 $if(linestretch)$
 \setstretch{$linestretch$}

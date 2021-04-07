@@ -33,7 +33,7 @@ biodiversity patterns [@keil_downscaling_2014]. Climatic and land cover paramete
 intervene at scales ranging from tens to hundreds of kilometers. At even finer scales, biotic
 and population dynamics processes are driving.
 
-4. **Once the methods will be validated for the Czech Republic, the logical continuation will be to use it over other European regions (\textit{i.e.} Switzerland, United-Kingdom, Brittany).** The main advantage of looking at other countries is to look at the trend of
+4. **Once the methods will be validated for the Czech Republic, the logical continuation will be to use it over other European regions (\textit{i.e.} Switzerland, United-Kingdom, Brittany, North America).** The main advantage of looking at other countries is to look at the trend of
 biodiversity facets at larger scales. As for objective 1, we can also expect that the species
 richness trends will tend to increase with spatial scale [@chase_species_2019] whilst, as for
 objective 2, other biodiversity dynamic indexes will decrease [@jarzyna_spatial_2015].

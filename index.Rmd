@@ -25,8 +25,8 @@ geometry:
   - bottom = 2cm
 
 # LOF and LOT for the PDF
-lof: true
-lot: yes
+# lof: true
+# lot: yes
 
 ## to colorize the biblio ref and the URLs
 colorlinks: true 

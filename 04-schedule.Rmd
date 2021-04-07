@@ -1,0 +1,22 @@
+
+# Schedule {#schedule}
+
+
+Table: (\#tab:sched) Planning of the methodological steps of my PhD
+
+ Start date   |   End date    | Description of the tasks   |
+:-----|  :-----|:-------------|
+ 01/10/2020   |     01/06/2021| 1. Gathering and managing avian biodiversity datasets over Czech Republic (objective 1, 2 and 3). \newline 2. Computing biodiversity indexes (species richness, colonization, extinction, temporal turnover, community similarity) from the data (objective 2 and 3).|
+  01/06/2021  |    01/09/2021 | Building models for Czech Republic: machine learning models are powerful but need to be parametrized in order to increase predicting power and avoid overfitting. Moreover, I will build my models with significant databases and expect to run long time consuming computing jobs.|
+  01/01/2022  | 01/05/2022    | 1. Testing addition of environmental variables to the random forests in order to increase predictive power (Objective 3).\newline 2. Harvesting and managing avian biodiversity datasets across Europe: objective 4 of this project will be to study biodiversity changes across scales at the European extent. I will have more datasets and management is expected to take more time than for Czech Republic.|
+  01/05/2022  | 01/08/2022    | Building models for Europe (objective 4): I will build my models with significant databases and expect to run long computing jobs.|
+  01/08/2022  | End of the PhD| 1. Building models for North America: Discussions about collaboration with Dr. Marta Jarzyna is ongoing in order to apply these developed method to North American breeding birds datasets they have access to. \newline 2. Merging the European and North American models will be a good start to look at a the more global biodiversity changes across different continents. \newline 3. Gathering and merging biodiversity datasets from other part of the globe will give us more insights about the main trend of the avian biodiversity changes at worldwide scale.|
+ 
+
+  
+
+
+
+
+
+<!-- I try to refer to \ref{tab:sched} -->

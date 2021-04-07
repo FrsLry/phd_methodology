@@ -116,9 +116,6 @@
 %{\thechapter{. }}
 \titlespacing*{\chapter}{0pt}{-50pt}{10pt}
 % -50 is to up the title and 10 is the space with the text below
-
-
-
 \ifluatex
   \usepackage{selnolig}  % disable illegal ligatures
 \fi
@@ -127,7 +124,7 @@
 
 \title{PhD Methodology}
 \author{François Leroy}
-\date{2021-04-06}
+\date{2021-04-07}
 
 % to include pdf
 \usepackage{pdfpages}
@@ -148,9 +145,9 @@
 \hypersetup{linkcolor=}
 \setcounter{tocdepth}{1}
 \tableofcontents
+\newpage
 }
-\listoffigures
-\listoftables
+\vspace{50mm}
 \setstretch{1.5}
 
 
@@ -256,7 +253,7 @@ This principal objective can be divided into four sub-objectives:
 \item
   \textbf{I will model temporal dynamics of avian species richness in the Czech Republic across spatio-temporal scales} (\emph{i.e.} grain size ranging from less than 1 Km² to more than 2 000
   Km²). This will allow to map biodiversity over Czech republic at any desired spatial and
-  temporal scales. Given the well known Species-Area Relationship \autocites[SAR,][]{arrhenius_species_1921,storch_untangling_2004} and Species-Time Relationship \autocite[STR,][]{white_comparison_2006} we expect to
+  temporal scales. Given the well known Species-Area Relationship \autocites[SAR,][]{arrhenius_species_1921}{storch_untangling_2004} and Species-Time Relationship \autocite[STR,][]{white_comparison_2006} we expect to
   see higher species richness at coarser spatial and temporal scales than at finer scales.
   Moreover, we will be able to look at the effect of grain size over biodiversity trends. So far,
   \textcite{chase_species_2019} showed that North American avian biodiversity is largely stable at fine
@@ -280,7 +277,7 @@ This principal objective can be divided into four sub-objectives:
   intervene at scales ranging from tens to hundreds of kilometers. At even finer scales, biotic
   and population dynamics processes are driving.
 \item
-  \textbf{Once the methods will be validated for the Czech Republic, the logical continuation will be to use it over other European regions (\textit{i.e.} Switzerland, United-Kingdom, Brittany).} The main advantage of looking at other countries is to look at the trend of
+  \textbf{Once the methods will be validated for the Czech Republic, the logical continuation will be to use it over other European regions (\textit{i.e.} Switzerland, United-Kingdom, Brittany, North America).} The main advantage of looking at other countries is to look at the trend of
   biodiversity facets at larger scales. As for objective 1, we can also expect that the species
   richness trends will tend to increase with spatial scale \autocite{chase_species_2019} whilst, as for
   objective 2, other biodiversity dynamic indexes will decrease \autocite{jarzyna_spatial_2015}.
@@ -359,8 +356,70 @@ predictor of interest called a marginal plot or partial plot. For instance, in F
 interacting area and time factors on the species richness for one of my model. In order to validate and
 enhance the models performance, the next steps will be to \textbf{1)} perform cross-validation to avoid
 overfitting, \textbf{2)} add the adequate environmental parameters and \textbf{3)} connect the local time series from
-the JPSP data to the atlas data by using both of them in a single model (this last step is delayed only
-due to a lack of computing power).
+the JPSP data to the atlas data by using both of them in a single model.
+
+\hypertarget{schedule}{%
+\chapter{Schedule}\label{schedule}}
+
+\begin{longtable}[]{@{}lll@{}}
+\caption{\label{tab:sched} Planning of the methodological steps of my PhD}\tabularnewline
+\toprule
+\begin{minipage}[b]{0.21\columnwidth}\raggedright
+Start date\strut
+\end{minipage} & \begin{minipage}[b]{0.21\columnwidth}\raggedright
+End date\strut
+\end{minipage} & \begin{minipage}[b]{0.49\columnwidth}\raggedright
+Description of the tasks\strut
+\end{minipage}\tabularnewline
+\midrule
+\endfirsthead
+\toprule
+\begin{minipage}[b]{0.21\columnwidth}\raggedright
+Start date\strut
+\end{minipage} & \begin{minipage}[b]{0.21\columnwidth}\raggedright
+End date\strut
+\end{minipage} & \begin{minipage}[b]{0.49\columnwidth}\raggedright
+Description of the tasks\strut
+\end{minipage}\tabularnewline
+\midrule
+\endhead
+\begin{minipage}[t]{0.21\columnwidth}\raggedright
+01/10/2020\strut
+\end{minipage} & \begin{minipage}[t]{0.21\columnwidth}\raggedright
+01/06/2021\strut
+\end{minipage} & \begin{minipage}[t]{0.49\columnwidth}\raggedright
+1. Gathering and managing avian biodiversity datasets over Czech Republic (objective 1, 2 and 3). \newline 2. Computing biodiversity indexes (species richness, colonization, extinction, temporal turnover, community similarity) from the data (objective 2 and 3).\strut
+\end{minipage}\tabularnewline
+\begin{minipage}[t]{0.21\columnwidth}\raggedright
+01/06/2021\strut
+\end{minipage} & \begin{minipage}[t]{0.21\columnwidth}\raggedright
+01/09/2021\strut
+\end{minipage} & \begin{minipage}[t]{0.49\columnwidth}\raggedright
+Building models for Czech Republic: machine learning models are powerful but need to be parametrized in order to increase predicting power and avoid overfitting. Moreover, I will build my models with significant databases and expect to run long time consuming computing jobs.\strut
+\end{minipage}\tabularnewline
+\begin{minipage}[t]{0.21\columnwidth}\raggedright
+01/01/2022\strut
+\end{minipage} & \begin{minipage}[t]{0.21\columnwidth}\raggedright
+01/05/2022\strut
+\end{minipage} & \begin{minipage}[t]{0.49\columnwidth}\raggedright
+1. Testing addition of environmental variables to the random forests in order to increase predictive power (Objective 3).\newline 2. Harvesting and managing avian biodiversity datasets across Europe: objective 4 of this project will be to study biodiversity changes across scales at the European extent. I will have more datasets and management is expected to take more time than for Czech Republic.\strut
+\end{minipage}\tabularnewline
+\begin{minipage}[t]{0.21\columnwidth}\raggedright
+01/05/2022\strut
+\end{minipage} & \begin{minipage}[t]{0.21\columnwidth}\raggedright
+01/08/2022\strut
+\end{minipage} & \begin{minipage}[t]{0.49\columnwidth}\raggedright
+Building models for Europe (objective 4): I will build my models with significant databases and expect to run long computing jobs.\strut
+\end{minipage}\tabularnewline
+\begin{minipage}[t]{0.21\columnwidth}\raggedright
+01/08/2022\strut
+\end{minipage} & \begin{minipage}[t]{0.21\columnwidth}\raggedright
+End of the PhD\strut
+\end{minipage} & \begin{minipage}[t]{0.49\columnwidth}\raggedright
+1. Building models for North America: Discussions about collaboration with Dr.~Marta Jarzyna is ongoing in order to apply these developed method to North American breeding birds datasets they have access to. \newline 2. Merging the European and North American models will be a good start to look at a the more global biodiversity changes across different continents. \newline 3. Gathering and merging biodiversity datasets from other part of the globe will give us more insights about the main trend of the avian biodiversity changes at worldwide scale.\strut
+\end{minipage}\tabularnewline
+\bottomrule
+\end{longtable}
 
 
 \singlespacing % reset the spacing of the bibliography style
