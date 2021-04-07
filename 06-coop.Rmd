@@ -1,4 +1,8 @@
 
 # Cooperations {#coop}
 
+This project takes part in the broader research project of Dr. Petr Keil who has been working on the problem of scale-dependent biodiversity change and integration of heterogeneous data for a decade now, and who has published several high-profile publications on these topics. He currently is my PhD supervisor. Petr's expertise will be particularly relevant for tasks requiring advanced statistical modelling, interpretation of the models, and putting the results in a broader macroecological context.
 
+Cooperation is already ongoing with Vladimír Bejček and Karel Šťastný who furnished us time series of avian biodiversity from the Česka Společnost Ornithologiká which were used in the publications of several atlases [see @bejcek_velke_2016]. On the other hand, Dr. Jiří Reif forwarded me local time series from the Jednotný Program Sčítání Ptáků (JPSP). Their expertise on bird ecologie will be helpful in order to interpret and enhance the outputs of my models. 
+
+Finally, discussions with Dr. Marta Jarzyna (University of Colombus, Ohio) are ongoing in order to work together on applying the methods that I use on Czech Republic and Europe to some American states.As a matter of fact, my results will **1)** allow to differentiate biodiversity dynamics on the North American and the European continents and **2)** help to better understand the link between spatio-temporal scales and biodiveristy dynamic by enlarging the databases that I use. 
