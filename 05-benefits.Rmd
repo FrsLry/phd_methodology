@@ -1,0 +1,16 @@
+
+# Benefits of outcome {#benefits}
+
+My PhD aim at several goals:
+
+1. Better understand the link between spatial and temporal features (*e.g.* latitude, longitude, area, time span) and biodiversity changes.
+
+2. Developing a modelling framework (tree-based models) allowing to forecast biodiversity indexes across various space and time scales would help to **1)** understand and thus **2)** forecast biodiversity dynamic.
+
+3. This method will allow to integrate heterogeneous biodiversity datasets that could usually not be used together with classical statistical models due to their inconsistencies in space and/or time scales. Thus, it will be possible to link local biodiversity datasets (*e.g.* censuses of ornithological associations, participative sciences) to broader ones [*e.g.* atlas, time-series assemblage such as Biotime database by @dornelas_biotime_2018].
+
+4. After focusing on the species richness changes, the link between spatial and temporal scales and the dynamic of other facets of biodiversity (*e.g.* colonization, extinction, $\beta$ diversity) will be investigated.
+
+5. Produce avian biodiversity maps at different spatial and temporal grain sizes over Czech Republic/Europe/North America.
+
+6. The parametrized models for birds will give insights on how to apply them to other taxa (*e.g.* lepidoptera, odonata, large mammals...).
