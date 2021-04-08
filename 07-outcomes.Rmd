@@ -1,0 +1,39 @@
+
+# Expected outcomes {#outcomes}
+
+\underline{Publications:}
+
+We expect at least 3 publications in journals with high Impact Factor (IF): **1)** the first one concerning
+avian biodiversity indexes dynamic (*i.e.* species richness, colonization, extinction and turnover) across
+spatio-temporal scales over Czech Republic (objectives 1 et 2), **2)** the second one about the
+strength of the link between environmental drivers and biodiversity changes across spatio-temporal
+scales (objective 3) and **3)** the third one related to the European avian biodiversity dynamic (objective 4). Publications about North-America and other part of the world can also be expected though the expected outputs still need to be discussed and determined with the foreign teams. 
+
+The journals aimed for publication of my PhD project will be the ones focusing on understanding
+macroecological patterns and spatio-temporal dynamic in a context of global anthropogenic changes.
+Journals interested by testing of new methods and conservation orientated journals will also be aimed.
+
+**Following are examples of the journals of interest:**
+
+* First quartile journals: Ecography, Diversity and Distributions, Global Change Biology
+* Second quartile journals: Ecology and Evolution, Ecological Modeling
+
+\underline{Conferences:}
+
+Aimed conferences will be related to ecology and conservation and statistical ecology (**e.g.** [Ecology Across Borders 2021](https://www.britishecologicalsociety.org/events/festival-of-ecology/ecology-across-borders-2021/), [Ecological Society of America](https://www.esa.org/events/meetings/future-esa-meetings/), [České společnosti pro ekologii](https://www.cspe.cz/konference/ekologie-2021/), [International Biogeography Society](https://www.biogeography.org/meetings/)).\newline\newline
+
+
+<!-- The new group is the only the financing part for it to start just after the outcomes-->
+\begingroup
+\let\clearpage\relax
+
+# Financing {#financing}
+
+My PhD is mainly financed by the [REES](https://www.fzp.czu.cz/en/r-9676-news/announcement-of-rees.html) project until my third year of study. On the other hand, I have been awarded the [IGA grant](https://www.fzp.czu.cz/en/r-9409-science-research/r-9531-internal-grant) for a time period of two years.  In order to finance the fourth year of my PhD, one of the grant aimed by Petr Keil is the [advanced grant of the ERC](https://erc.europa.eu/funding/advanced-grants) (European Research Council).  
+
+\endgroup
+
+
+
+
+
