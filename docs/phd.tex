@@ -50,7 +50,6 @@
 \IfFileExists{xurl.sty}{\usepackage{xurl}}{} % add URL line breaks if available
 \IfFileExists{bookmark.sty}{\usepackage{bookmark}}{\usepackage{hyperref}}
 \hypersetup{
-  pdftitle={PhD Methodology},
   pdfauthor={François Leroy},
   colorlinks=true,
   linkcolor=Maroon,
@@ -125,7 +124,6 @@
 \usepackage[style=apa,]{biblatex}
 \addbibresource{references.bib}
 
-\title{PhD Methodology}
 \author{François Leroy}
 \date{2021-04-08}
 
@@ -137,8 +135,8 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % Start of the documents
 \begin{document}
-\maketitle
 
+\includepdf[pages = {1}, fitpaper=true]{_assets/coverpage.pdf}
 
 % Roman numbering for content before toc and toc itself
 \cleardoublepage 
