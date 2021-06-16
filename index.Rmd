@@ -67,8 +67,8 @@ space and time-span on different aspects of biodiversity.
 
 1. Modelling and mapping avian species richness changes over Czech Republic across space and time
 scales.
-2. Decompose the modelled biodiversity to colonization, extinction, species turnover, across spatiotemporal
+2. Decompose the modelled biodiversity to colonization, extinction, species turnover, across spatiotemporal.
 scales.
 3. Estimate the strength of the link between environmental drivers of biodiversity change across
 spatio-temporal scales.
-4. Apply the previously developed method to other European regions (e.g. UK, Switzerland, France)
+4. Apply the previously developed method to other regions worldwide (e.g. UK, Switzerland, France, North America).

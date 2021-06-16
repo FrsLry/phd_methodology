@@ -15,19 +15,19 @@ will also be studied in other European countries (objective 4) and data for thos
 already contacted the Bretagne Vivante association, which handle biodiversity data for Brittany
 (*i.e.* French region). It will allow us to access avian biodiversity data for oceanic climate in order to
 contrast with the continental climate of the Czech Republic. Other datasets are aimed such as Swiss,
-British, Cataloninan or other French biodiversity data. In order to achieve the third objective of this
+British, Cataloninan, French or North American biodiversity data. In order to achieve the third objective of this
 project, environmental datasets are needed. For instance, the CORINE and HYDE [@goldewijk_hyde_2011] datasets are aimed to access landcover and land use data, respectively. Climatology
 timeseries can also be found with Chelsa [@karger_climatologies_2017; @karger_data_2018] and WorldClim
 datasets [@fick_worldclim_2017].
 Data management represent a significant time consuming part of a modelling project. So far, the
 beginning of my PhD consisted mainly into gathering and shaping datasets in order to
-be able to analyse and use them to train my models (objective 1). So far, species richness has been computed
-from 1973 to 2020 and for areas ranging from less than 1 Km² to more than 2 000 Km². For this, I
+be able to analyse and use them to train my models (objective 1). Species richness has been computed
+from 1973 to 2020 for areas ranging from less than 1 Km² to more than 2 000 Km². For this, I
 used the avian biodiversity atlas data from the Česka Společnost Ornithologiká available at one grainsize
 that I aggregated into coarser 2 by 2 and 4 by 4 grain size ([Fig. 1](https://github.com/FrsLry/IGA_figures/blob/main/maps_IGA.pdf)). On the other hand, I managed the
 JPSP dataset in a singular way, allowing me to extract species richness from censuses of local points
-to censuses of entire transects. Thanks to those, I was able to train my first random forests \textcolor{red}{(see Pilot
-results part below)}. Thus, I am already able to shape any biodiversity dataset to use them into the
+to censuses of entire transects. Thanks to those, I was able to train my first random forests (see Pilot
+results part below). Thus, I am already able to shape any biodiversity dataset to use them into the
 machine learning framework desired. The next step will be to compute dynamic biodiversity indexes
 such as colonization, extinction, temporal turnover and community dissimilarity for objective 2.
 
@@ -39,7 +39,7 @@ in order to obtain a tree in which one just need to follow the splits to predict
 response variable or dependent variable) such as species richness, colonization, extinction...
 
 In order to make a model both understandable and predictive, a balance must be found between
-complexity and explicative power [@houlahan_priority_2017]. Thus, using as few covariates as possible to
+complexity and explicative power [@houlahan_priority_2017; @levins_strategy_1966]. Thus, using as few covariates as possible to
 predict biodiversity is necessary if we want to make the forecasts conveniently and if we want to
 discuss our models. We aim to start by using very few covariates such as latitude, longitude, area,
 time and time span in order to then add environmental parameters step by step. Tree-based machine
@@ -60,12 +60,9 @@ which represent the next steps of this project.
 ## Pilot results
 
 So far, I have already been able to produce random forests using only latitude, longitude, area, date, time span and elongation as covariates that explain around 90% of the species richness variance over
-the Czech Republic, which is encouraging (see Fig. 2,
-https://github.com/FrsLry/IGA_figures/blob/main/pred_vs_obs.pdf). An other advantage of the complex
+the Czech Republic, which is encouraging (see [Fig. 2](https://github.com/FrsLry/IGA_figures/blob/main/pred_vs_obs.pdf)). An other advantage of the complex
 nonparametric models is that you can represent the dependence between the outcome and a
-predictor of interest called a marginal plot or partial plot. For instance, in Fig.3
-(https://github.com/FrsLry/IGA_figures/blob/main/marginal_plot.pdf), I represented the influence of the
+predictor of interest called a marginal plot or partial plot. For instance, in [Fig.3](https://github.com/FrsLry/IGA_figures/blob/main/marginal_plot.pdf), I represented the influence of the
 interacting area and time factors on the species richness for one of my model. In order to validate and
 enhance the models performance, the next steps will be to **1)** perform cross-validation to avoid
-overfitting, **2)** add the adequate environmental parameters and **3)** connect the local time series from
-the JPSP data to the atlas data by using both of them in a single model.
+overfitting, **2)** add the adequate environmental parameters.

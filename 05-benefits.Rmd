@@ -3,7 +3,7 @@
 
 My PhD aim at several goals:
 
-1. Better understand the link between spatial and temporal features (*e.g.* latitude, longitude, area, time span) and biodiversity changes.
+1. Better understand the link between spatial and temporal features (*e.g.* latitude, longitude, area, elongation, time span) and biodiversity changes.
 
 2. Developing a modelling framework (tree-based models) allowing to forecast biodiversity indexes across various space and time scales would help to **1)** understand and thus **2)** forecast biodiversity dynamic.
 
