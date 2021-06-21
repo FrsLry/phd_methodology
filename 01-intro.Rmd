@@ -3,7 +3,7 @@
 
 **PhD candidate:** François Leroy\newline
 **Programme:** Environmental Earth Sciences\newline
-**Department:** [Applied Geoinformatic and Spatial Planning](https://www.fzp.czu.cz/en/r-9407-departments/r-9471-departments/r-9649-department-of-spatial-sciences)\newline
+**Department:** [Spatial Sciences](https://www.fzp.czu.cz/en/r-9407-departments/r-9471-departments/r-9649-department-of-spatial-sciences)\newline
 **Advisor:** [doc. Ing. Petra Šímová, Ph.D.](http://wp.czu.cz/cs/index.php/?r=1071&mp=person.info&idClovek=2155)\newline
 **Consultant:** Mgr. [Petr Keil](http://wp.czu.cz/cs/index.php/?r=1071&mp=person.info&idClovek=34772), PhD\newline
 **Beginning of study:** October 2020\newline

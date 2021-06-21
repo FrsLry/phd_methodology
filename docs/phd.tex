@@ -115,9 +115,6 @@
 %{\thechapter{. }}
 \titlespacing*{\chapter}{0pt}{-50pt}{10pt}
 % -50 is to up the title and 10 is the space with the text below
-
-
-
 \ifluatex
   \usepackage{selnolig}  % disable illegal ligatures
 \fi
@@ -125,7 +122,7 @@
 \addbibresource{references.bib}
 
 \author{François Leroy}
-\date{2021-06-16}
+\date{2021-06-21}
 
 % to include pdf
 \usepackage{pdfpages}
@@ -158,29 +155,131 @@
 
 
 % The mind, the...
-\hypertarget{title-phd-methodology-if-you-indicate-the-tile-itll-create-a-new-cover-page}{%
-\chapter{title: ``PhD Methodology'' \# if you indicate the tile, it'll create a new cover page}\label{title-phd-methodology-if-you-indicate-the-tile-itll-create-a-new-cover-page}}
+\hypertarget{annotation}{%
+\chapter*{Annotation}\label{annotation}}
+\addcontentsline{toc}{chapter}{Annotation}
 
-Placeholder
+Biodiversity, at the basis of many essentials ecosystem services, is in the process of facing its sixth mass extinction. Although global extinction is unprecedented, there is so far no reason to expect that biodiversity dynamic at lower spatial and temporal scales follow this trend. Thus, links between
+spatio-temporal scales and facets of biodiversity (\emph{i.e.} species richness, species diversity, colonization, extinction,
+species turnover, etc) need to be fully understood if we want to address this worldwide crisis. So far,
+attempts to describe biodiversity changes have been limited mainly by heterogeneity in spatial and
+temporal scales that was hardly taken into account by the statistical modelling frameworks.
 
-\hypertarget{this-line-is-to-use-when-you-want-several-outputs-specified-in-output.yml}{%
-\section{This line is to use when you want several outputs (specified in output.yml)}\label{this-line-is-to-use-when-you-want-several-outputs-specified-in-output.yml}}
+My PhD project propose to address this flaws in order to understand in more details biodiversity
+changes across spatial and temporal scales. Especially, we aim at developing and testing nonparametric
+tree-based modelling methods allowing to study the non-linear and interacting effects of
+space and time-span on different aspects of biodiversity.
 
-\hypertarget{the-default-class}{%
-\section{The default class}\label{the-default-class}}
+\underline{The specific objectives of my PhD project are:}
 
-\hypertarget{to-colorize-the-biblio-ref-and-the-urls}{%
-\section{to colorize the biblio ref and the URLs}\label{to-colorize-the-biblio-ref-and-the-urls}}
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\tightlist
+\item
+  Modelling and mapping avian species richness changes over Czech Republic across space and time
+  scales.
+\item
+  Decompose the modelled biodiversity to colonization, extinction, species turnover, across spatiotemporal.
+  scales.
+\item
+  Estimate the strength of the link between environmental drivers of biodiversity change across
+  spatio-temporal scales.
+\item
+  Apply the previously developed method to other regions worldwide (e.g.~UK, Switzerland, France, North America).
+\end{enumerate}
+
+\clearpage
+
+\textbf{PhD candidate:} François Leroy\newline
+\textbf{Programme:} Environmental Earth Sciences\newline
+\textbf{Department:} \href{https://www.fzp.czu.cz/en/r-9407-departments/r-9471-departments/r-9649-department-of-spatial-sciences}{Spatial Sciences}\newline
+\textbf{Advisor:} \href{http://wp.czu.cz/cs/index.php/?r=1071\&mp=person.info\&idClovek=2155}{doc. Ing. Petra Šímová, Ph.D.}\newline
+\textbf{Consultant:} Mgr. \href{http://wp.czu.cz/cs/index.php/?r=1071\&mp=person.info\&idClovek=34772}{Petr Keil}, PhD\newline
+\textbf{Beginning of study:} October 2020\newline
+\newline
+
+\begingroup
+\let\clearpage\relax
 
 \hypertarget{intro}{%
 \chapter{Introduction}\label{intro}}
 
-Placeholder
+Human life quality is intrinsically linked to ecosystems state that he is living in. Indeed, ecosystems services extend in a large spectrum of mechanisms including nutrient cycle, food production, or climate and water cycle regulation \autocite{pereira_global_2012}. Some of those ecosystem
+functions are managed by bird populations such as seed dispersal, controls pests or pollinate plant.
+Unfortunately, anthropogenic stressors like habitat loss, over exploitation, pollution or introduction of
+invasive species could lead biodiversity to its sixth mass extinction \autocite{barnosky_has_2011}.
+
+While the loss of global biodiversity is unprecedented, current scientific literature has also shown that
+temporal trends in local changes of biodiversity can be opposite to trends at larger scales \autocite{chase_species_2019}. Thus, current changes in biodiversity is far more complex than a simple global decrease:
+most of the ecosystems undergo alterations of their communities with changes in species composition \autocite{blowes_geography_2019,dornelas_assemblage_2014}.
+
+Typically, biodiversity is considered for a particular taxon (\emph{e.g.} birds, amphibians, reptiles\ldots), but also
+according to the spatial scale it is defined by. Here, the term scale refers to the area in which the
+biodiversity in considered, also referred hereafter as grain size. So far, it has been assumed that
+holding the spatial scale constant when studying biodiversity is mandatory \autocite{whittaker_scale_2001}. As
+a matter of fact, it is known that species richness increases with the area considered \autocite{arrhenius_species_1921} and this relationship is approximately linear on a log-log scale (Species-Area Relationship,
+SAR). However, this assumption restricts the data accessibility as sampling plans widely differ
+according to the species studied, the resources available or, the field conditions. Thus, developing a
+method capable of dealing with biodiversity across varying grain size could increase significantly the
+data availability. Moreover, it would allow to model biodiversity at different spatial scales than the
+ones used in the data. Modelling biodiversity indexes at finer spatial grain size that the data used to
+learn the model is referred as \emph{downscaling} biodiversity whilst extrapolating at coarser grain-size is
+called \emph{upscaling}.
+
+So far, there are indications that such method can be used. For instance, \textcite{keil_downscaling_2014} and \textcite{keil_downscaling_2013} showed promising downscaling biodiversity models using biodiversity data with different
+spatial scales, whilst \textcite{kunin_upscaling_2018} showed that upscaling biodiversity is also possible. Thus, all
+the constituents of cross-scales models are known but still need to be gathered and tested. For
+instance, \textcite{jarzyna_spatial_2015} used a Bayesian framework to study temporal changes of avian
+biodiversity (colonization, extinction, temporal turnover) across scales. However, other approaches
+such as parametric Generalized Linear Models (GLM), Generalized Additive Models (GAM) and
+Generalized Linear Mixed Model (GLMM) or non-parametric tree based machine learning methods
+need to be tested.
+
+\endgroup
 
 \hypertarget{aims}{%
 \chapter{Aims}\label{aims}}
 
-Placeholder
+The main aim of my PhD will be to test different statistical modeling methods allowing to integrate
+cross-scales biodiversity data. This method will allow to model biodiversity facets at various spatial
+and temporal grain sizes.
+
+This principal objective can be divided into four sub-objectives:
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\item
+  \textbf{I will model temporal dynamics of avian species richness in the Czech Republic across spatio-temporal scales} (\emph{i.e.} grain size ranging from less than 1 Km² to more than 2 000
+  Km²). This will allow to map biodiversity over Czech republic at any desired spatial and
+  temporal scales. Given the well known Species-Area Relationship \autocites[SAR,][]{arrhenius_species_1921}{storch_untangling_2004} and Species-Time Relationship \autocite[STR,][]{white_comparison_2006} we expect to
+  see higher species richness at coarser spatial and temporal scales than at finer scales.
+  Moreover, we will be able to look at the effect of grain size over biodiversity trends. So far,
+  \textcite{chase_species_2019} showed that North American avian biodiversity is largely stable at fine
+  scales, but that it tends to increase with spatial scale. Thus, we can expect to observe the same
+  trends for the Czech Republic.
+\item
+  \textbf{I will decompose the modelled biodiversity to colonization, extinction, and species turnover, across spatio-temporal scales.} Indeed, biodiversity dynamic is underlined by
+  those ecological processes whose trends can be opposite to the species richness' one \autocite{dornelas_assemblage_2014}. Thus, understanding how they fluctuate according to the spatio-temporal scales
+  they are considered will help understand the global biodiversity dynamic. So far, \textcite{jarzyna_spatial_2015} showed that those facets of biodiversity was in general declining with increasing
+  spatial grain size for the state of New-York. However the colonization undergoes a slower
+  steep. Thus, those trends are also expected to occur with our model for the Czech Republic.
+\item
+  \textbf{I will estimate the strength of the link between environmental drivers of biodiversity change across spatio-temporal scales.} So far, land use change, habitat loss, or changes in
+  climatic conditions are good candidates for such drivers. \textcite{jarzyna_spatial_2015} showed that
+  environmental parameters, such as climate change variables (\emph{e.g.} temperatures, pluviometry)
+  and landscape variables (\emph{e.g.} elevation, sampling effort), were dependent on the spatial scale
+  on the one hand, but also on the metric considered on the other hand (\emph{i.e.} colonization,
+  extinction\ldots). Thus, the expectations are more difficult to assess here. What we know is that at
+  larger scales (\emph{i.e.} biogeographic or continental), evolutionary processes tend to drive the
+  biodiversity patterns \autocite{keil_downscaling_2014}. Climatic and land cover parameters, for their part,
+  intervene at scales ranging from tens to hundreds of kilometers. At even finer scales, biotic
+  and population dynamics processes are driving.
+\item
+  \textbf{Once the methods will be validated for the Czech Republic, the logical continuation will be to use it over other European regions (\textit{i.e.} Switzerland, United-Kingdom, Brittany, North America).} The main advantage of looking at other countries is to look at the trend of
+  biodiversity facets at larger scales. As for objective 1, we can also expect that the species
+  richness trends will tend to increase with spatial scale \autocite{chase_species_2019} whilst, as for
+  objective 2, other biodiversity dynamic indexes will decrease \autocite{jarzyna_spatial_2015}.
+\end{enumerate}
 
 \hypertarget{method}{%
 \chapter{Methodological approach}\label{method}}
@@ -350,7 +449,41 @@ Finally, discussions with Dr.~Marta Jarzyna (University of Colombus, Ohio) are o
 \hypertarget{outcomes}{%
 \chapter{Expected outcomes}\label{outcomes}}
 
-Placeholder
+\underline{Publications:}
+
+We expect at least 3 publications in journals with high Impact Factor (IF): \textbf{1)} the first one concerning
+avian biodiversity indexes dynamic (\emph{i.e.} species richness, colonization, extinction and turnover) across
+spatio-temporal scales over Czech Republic (objectives 1 et 2), \textbf{2)} the second one about the
+strength of the link between environmental drivers and biodiversity changes across spatio-temporal
+scales (objective 3) and \textbf{3)} the third one related to the European avian biodiversity dynamic (objective 4). Publications about North-America and other part of the world can also be expected though the expected outputs still need to be discussed and determined with the foreign teams.
+
+The journals aimed for publication of my PhD project will be the ones focusing on understanding
+macroecological patterns and spatio-temporal dynamic in a context of global anthropogenic changes.
+Journals interested by testing of new methods and conservation orientated journals will also be aimed.
+
+\textbf{Following are examples of the journals of interest:}
+
+\begin{itemize}
+\tightlist
+\item
+  First quartile journals: Ecography, Diversity and Distributions, Global Change Biology
+\item
+  Second quartile journals: Ecology and Evolution, Ecological Modeling
+\end{itemize}
+
+\underline{Conferences:}
+
+Aimed conferences will be related to ecology and conservation and statistical ecology (\textbf{e.g.} \href{https://www.britishecologicalsociety.org/events/festival-of-ecology/ecology-across-borders-2021/}{Ecology Across Borders 2021}, \href{https://www.esa.org/events/meetings/future-esa-meetings/}{Ecological Society of America}, \href{https://www.cspe.cz/konference/ekologie-2021/}{České společnosti pro ekologii}, \href{https://www.biogeography.org/meetings/}{International Biogeography Society}).\newline\newline
+
+\begingroup
+\let\clearpage\relax
+
+\hypertarget{financing}{%
+\chapter{Financing}\label{financing}}
+
+My PhD is mainly financed by the \href{https://www.fzp.czu.cz/en/r-9676-news/announcement-of-rees.html}{REES} project until my third year of study. On the other hand, I have been awarded the \href{https://www.fzp.czu.cz/en/r-9409-science-research/r-9531-internal-grant}{IGA grant} for a time period of two years. In order to finance the fourth year of my PhD, one of the grant aimed by Petr Keil is the \href{https://erc.europa.eu/funding/advanced-grants}{advanced grant of the ERC} (European Research Council).
+
+\endgroup
 
 
 \singlespacing % reset the spacing of the bibliography style
